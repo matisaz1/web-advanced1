@@ -1,0 +1,39 @@
+span {
+    color: red;
+    font-size: 20px;
+    border: 1px solid black;
+}
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+} 
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+p{
+    margin: 100px
+}
+
+p{
+    margin: 25px 50px 75px;
+} 
+
+p{
+    margin: 100px 150px 100px 80px;
+}
+span{
+    margin: 100px
+     padding 20px;
+}
+div{
+    border: 1px solid black;
+    height: 20px;
+    width: 50%;
+    background-color: aliceblue;
+}

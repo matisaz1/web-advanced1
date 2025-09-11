@@ -1,0 +1,59 @@
+    h1{
+        color:green;
+        letter-spacing:20px;
+        word-spacing:10px;
+    }
+
+    p{
+        text-indent: 50px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+
+    }
+
+    h2{
+        text-decoration: overline;
+        font-size: 30px;
+    }
+
+    h3{
+        text-decoration: line-through;
+    }
+
+    h4{
+        text-decoration: underline;
+    }
+    .myElement{
+       color: red;
+    }
+
+    #normalText{
+        font-style: normal;
+        font-weight: normal;
+    }
+    #italicText{
+        font-style: italic;
+        font-weight: bold;
+    }
+    #obliqueText{
+        font-style: oblique;
+        font-weight: 900;
+    }
+
+    a{
+        color: orange;
+    }
+
+    a:link{
+        color: red;
+    }
+    a:visited{
+        color: green;
+    }
+    a:hover{
+        color: brown;
+    }
+    a:active{
+        color: blue;
+    }
