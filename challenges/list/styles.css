@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  padding: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: square;
+  background: #e8f0fe;
+  padding: 15px 30px;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+ol {
+  list-style-type: upper-roman;
+  background: #fff3cd;
+  padding: 15px 30px;
+  border: 2px dashed #d4a017;
+  border-radius: 10px;
+}
+
+ol li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #444;
+}
