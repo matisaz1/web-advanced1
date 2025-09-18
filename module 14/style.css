@@ -1,0 +1,81 @@
+article p{
+    background-color: antiquewhite;
+    color:black
+    padding: 20px;
+
+}
+
+article > p{
+    background-color: brown;
+}
+article ~ p{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+}
+article + p{
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+h3:first-child{
+    background-color:darkblue;
+    color:white;
+}
+
+input:in-range{
+    border: 3px solid green;
+}
+
+input:out-of-range{
+    border: 3px solid red;
+}
+
+input:required{
+    background-color: aliceblue;
+    color:black;
+}
+
+input:focus{
+    background-color: lightgrey;
+}
+
+span:first-of-type{
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+p:first-line{
+    color:blue;
+}
+
+p:first-letter{
+    font-size: 40px;
+}
+
+h4:before{
+    content: url(images/warning.png)
+}
+
+h4:after{
+    content: url(images/danger.png)
+}
+
+::selection{
+    background-color: yellow;
+    color: black;
+}
+
+div{
+    opacity: 0.5;
+}

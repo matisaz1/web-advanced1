@@ -10,7 +10,6 @@ h2 {
   text-align: center;
 }
 
-/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -19,31 +18,26 @@ table {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Header row */
 thead {
   background-color: #4a90e2;
   color: white;
   text-align: left;
 }
 
-/* Borders + Padding */
 th, td {
   border: 1px solid #ddd;
   padding: 12px 15px;
   font-size: 16px;
 }
 
-/* Alternating row colors */
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-/* Hover effect */
 tbody tr:hover {
   background-color: #e6f0ff;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   table {
     font-size: 14px;
