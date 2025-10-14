@@ -1,0 +1,43 @@
+h1{
+    border: 2px solid white;
+    padding: 20px;
+}
+p{
+    column-count: 2;
+}
+
+@media(min-width:600px){
+    body{
+        background-color: #70343e;
+        color: white;
+    }
+}
+
+@media all amd (min-width:600px){
+    body{
+        background-color: #3e7034;
+        color: black;
+    }
+}
+
+@media all and (orientation: landscape){
+    h1{
+        font-size: 80px;
+    }
+}
+@media all and (orientation: portrait){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:600px) and (max-width:900px){
+    img{
+        display: none;
+    }
+}
+@media print{
+    body{
+        background-color: transparent;
+    }
+}
