@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IdeaForge — LaunchLab + Creativerse (All-in-one)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div>
+        <h1>✨ IdeaForge</h1>
+        <p class="sub">Generate • Validate • Refine • Visualize — Brainstorm to pitch, in one page.</p>
+      </div>
+      <div class="key-area">
+        <input id="apiKey" type="password" placeholder="OpenAI API Key (optional)" />
+        <button id="clearStorage" class="btn">Clear All</button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel left">
+        <h2>Generate Ideas</h2>
+        <div class="row">
+          <input id="topicInput" placeholder="Topic — e.g. car business, sustainable fashion..." />
+          <select id="numIdeas"><option>3</option><option>1</option><option>2</option><option>4</option><option>5</option><option>6</option></select>
+          <select id="toneSelect">
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+            <option value="wacky">Wacky</option>
+            <option value="lean">Lean startup</option>
+          </select>
+          <button id="generateBtn" class="btn primary">Generate</button>
+        </div>
+
+        <div id="genResults" class="stack empty">
+          <p class="hint">No ideas yet — generate to begin.</p>
+        </div>
+
+        <div class="controls-row">
+          <button id="mergeBtn" class="btn">Merge Selected</button>
+          <button id="exportJSON" class="btn">Export JSON</button>
+          <button id="exportTXT" class="btn">Export TXT</button>
+        </div>
+      </section>
+
+      <section class="panel mid">
+        <h2>Idea Studio</h2>
+        <div id="studioEmpty" class="hint">Select an idea or a planet to edit / refine / validate.</div>
+
+        <div id="studio" class="studio" hidden>
+          <h3 id="studioTitle"></h3>
+          <p id="studioText"></p>
+          <div class="studio-row">
+            <button id="refineBtn" class="btn">Refine Idea</button>
+            <button id="buildPlanBtn" class="btn">Build Mini Plan</button>
+            <button id="nameBtn" class="btn">Generate Name + Tagline</button>
+            <button id="pitchBtn" class="btn">Investor Pitch</button>
+            <button id="validateBtn" class="btn">Validate</button>
+            <button id="saveSetBtn" class="btn primary">Save Idea</button>
+          </div>
+
+          <div id="studioOutput" class="studio-output"></div>
+        </div>
+
+        <h3 style="margin-top:16px">Saved Idea Library</h3>
+        <div id="library" class="stack"></div>
+
+      </section>
+
+      <aside class="panel right">
+        <h2>Creativerse — Your Idea Galaxy</h2>
+        <canvas id="galaxy" width="400" height="360"></canvas>
+        <div class="mini">
+          <p class="note">Click a planet to open the idea in the Idea Studio. Drag to pan.</p>
+          <div class="fav-row">
+            <button id="showFavs" class="btn">Show Favorites</button>
+            <button id="clearFavs" class="btn">Clear Favorites</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <small>Built with ❤️ — IdeaForge • Works offline (fallback) • For production use a backend proxy for API keys.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 BrainForge AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 BrainForge AI</h1>
+      <p>Generate creative ideas, refine them, and visualize them with AI.</p>
+    </header>
+
+    <main>
+      <!-- Input -->
+      <section class="input-area">
+        <input type="text" id="topicInput" placeholder="Enter your topic (e.g. fitness app, car business...)" />
+        <button id="generateBtn">Generate Ideas</button>
+      </section>
+
+      <!-- Idea Cards -->
+      <section id="ideasContainer" class="ideas"></section>
+
+      <!-- Expanded Idea -->
+      <section id="expandedSection" class="expanded hidden">
+        <h2>🔍 Expanded Idea</h2>
+        <div id="expandedContent"></div>
+      </section>
+
+      <!-- Image Generator -->
+      <section id="imageSection" class="image-gen hidden">
+        <h2>🎨 Generated Image</h2>
+        <div id="imageContainer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>BrainForge AI © 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
