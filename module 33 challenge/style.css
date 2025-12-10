@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+    padding: 24px;
+}
+
+.container {
+    max-width: 520px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    padding: 8px;
+    width: 320px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+.input-error {
+    border-color: red !important;
+}
+
+button {
+    margin-top: 18px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
